@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorry 1000 Times</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="sorryPage">
+    <script>
+      function generateSorryText() {
+        let sorryText = '';
+        for (let i = 0; i < 1000; i++) {
+          sorryText += 'Sorry ';
+        }
+        document.getElementById('sorryPage').innerHTML = `<p>${sorryText}</p>`;
+      }
+      
+      // Call the function when the page is loaded
+      window.onload = function () {
+        generateSorryText();
+      };
+    </script>
+  </div>
+
+</body>
+</html>
